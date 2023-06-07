@@ -15,8 +15,8 @@ apply plugin: 'idea'
 apply plugin: 'org.grails.grails-plugin'
 apply plugin: 'org.grails.internal.grails-plugin-publish'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 11
+targetCompatibility = 11
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
