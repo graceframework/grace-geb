@@ -31,12 +31,10 @@ configurations {
 
 dependencies {
     api "org.grails:grails-core:$grailsVersion"
-    api "org.gebish:geb-spock:$gebSpock", {
-        exclude group: 'org.codehaus.groovy', module: 'groovy-all'
-    }
-    documentation "org.codehaus.groovy:groovy:$groovyVersion"
-    documentation "org.codehaus.groovy:groovy-ant:$groovyVersion"
-    documentation "org.codehaus.groovy:groovy-templates:$groovyVersion"
+    api "org.gebish:geb-spock:$gebSpock"
+    documentation "org.apache.groovy:groovy:$groovyVersion"
+    documentation "org.apache.groovy:groovy-ant:$groovyVersion"
+    documentation "org.apache.groovy:groovy-templates:$groovyVersion"
     documentation "com.github.javaparser:javaparser-core:3.15.14"
 }
 
