@@ -7,7 +7,7 @@ buildscript {
         maven { url 'https://repo.gradle.org/gradle/libs-releases' }
 	}
 	dependencies {
-		classpath "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
+		classpath "org.graceframework:grace-gradle-plugin:$graceVersion"
         classpath "io.github.gradle-nexus:publish-plugin:1.3.0"
 	}
 }
@@ -23,7 +23,7 @@ group "org.graceframework.plugins"
 apply plugin: "eclipse"
 apply plugin: "idea"
 apply plugin: "java-library"
-apply plugin: "org.grails.grails-plugin"
+apply plugin: "org.graceframework.grace-plugin"
 apply plugin: "io.github.gradle-nexus.publish-plugin"
 apply plugin: "maven-publish"
 apply plugin: "signing"
@@ -32,6 +32,7 @@ repositories {
 	// mavenLocal()
 	mavenCentral()
     maven { url "https://repo.grails.org/grails/core" }
+    maven { url "https://plugins.gradle.org/m2/" }
 }
 
 configurations {
