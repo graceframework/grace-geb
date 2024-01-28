@@ -11,14 +11,14 @@ class GebGrailsPlugin extends Plugin {
     def pluginExcludes = [
             "grails-app/views/error.gsp"
     ]
-    def title = "Grails Geb Plugin"
-    def author = "Graeme Rocher"
-    def authorEmail = "grocher@pivotal.io"
+    def title = "Grace Geb Plugin"
+    def author = "Michael Yan"
+    def authorEmail = "rain@rainboyan.com"
     def description = '''\
 Plugin that adds Geb functional testing code generation features.
 '''
-    def documentation = "https://plugins.grails.org/plugin/grails/geb"
+    def documentation = "https://github.com/graceframework/grace-geb"
     def license = "APACHE"
-    def issueManagement = [system: "Github Issues", url: "https://github.com/grails/geb/issues"]
-    def scm = [url: "https://github.com/grails/geb"]
+    def issueManagement = [system: "Github Issues", url: "https://github.com/graceframework/grace-geb/issues"]
+    def scm = [url: "https://github.com/graceframework/grace-geb"]
 }
