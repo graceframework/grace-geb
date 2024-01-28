@@ -1,5 +1,5 @@
 description("Creates a Geb Functional Test") {
-    usage "grails create-functional-test [TEST NAME]"
+    usage "grace create-functional-test [TEST NAME]"
     argument name:'Test Name', description:"The name of the test"
 	completer AllClassCompleter
 }
