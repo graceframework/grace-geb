@@ -106,7 +106,7 @@ publishing {
                 scm {
                     connection = 'scm:git:git://github.com/graceframework/grace-geb.git'
                     developerConnection = 'scm:git:ssh://github.com:graceframework/grace-geb.git'
-                    url = 'https://github.com/graceframework/grace-geb/tree/5.0.x'
+                    url = 'https://github.com/graceframework/grace-geb/tree/5.1.x'
                 }
             }
         }
