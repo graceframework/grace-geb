@@ -2,7 +2,7 @@
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <title>3 Installation 6.3.0-SNAPSHOT</title>
+    <title>5 Support 6.3.0-SNAPSHOT</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
     <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
@@ -74,18 +74,16 @@ function addJsClass() {
             <div id="main" class="corner-all">
 
                 
-                    <div class="toc-item prev-left"><a href="../guide/releases.html">&lt;&lt; <strong>2</strong><span>Release History</span></a></div>
+                    <div class="toc-item prev-left"><a href="../guide/usage.html">&lt;&lt; <strong>4</strong><span>Usage</span></a></div>
                 
 
                 <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
 
                 
-                    <div class="toc-item next-right"><a href="../guide/usage.html"><strong>4</strong><span>Usage</span> >></a></div>
-                
 
 
                 <div class="project">
-                    <h1>3 Installation</h1>
+                    <h1>5 Support</h1>
 
                     <p><strong>Version:</strong> 6.3.0-SNAPSHOT</p>
                 </div>
@@ -94,54 +92,23 @@ function addJsClass() {
 
                 
 
-<h1 id="installation"><a class="anchor" href="#installation"></a>3 Installation</h1>
+<h1 id="support"><a class="anchor" href="#support"></a>5 Support</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/graceframework/grace-geb/edit/6.3.x/docs/guide/installation.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/graceframework/grace-geb/edit/6.3.x/docs/guide/support.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
 
 
 <div class="paragraph">
-<p>To start using this plugin, there are only a couple simple steps:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Import the library in your <code>build.gradle</code></p>
-</li>
-</ol>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="groovy">dependencies {
-    testImplementation "org.graceframework.plugins:geb:6.3.0-SNAPSHOT"
-    testImplementation "org.seleniumhq.selenium:selenium-api"
-    testImplementation "org.seleniumhq.selenium:selenium-support"
-    testRuntimeOnly "org.seleniumhq.selenium:selenium-chrome-driver"
-    testRuntimeOnly "org.seleniumhq.selenium:selenium-firefox-driver"
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Before 6.3, Geb plugin use <a href="https://github.com/erdi/webdriver-binaries-gradle-plugin">WebDriver binaries Gradle plugin</a> to downloads and caches WebDriver binaries specific to the OS the build runs on, but this plugin dosen&#8217;t support Gradle 8.7+ due to <a href="https://github.com/erdi/webdriver-binaries-gradle-plugin/issues/43">this issue</a>, so Geb plugin doesn&#8217;t use it in 6.3 any more.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>Selenium Manager is a command-line tool implemented in Rust that provides automated driver and browser management for Selenium. Selenium bindings use this tool by default, so you do not need to download it or add anything to your code or do anything else to use it.</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>We recommend you use <a href="https://www.selenium.dev/documentation/selenium_manager/">Selenium Manager</a> instead of WebDriver binaries Gradle plugin. In 6.3, Selenium dependencies have already been upgraded to 4.19.1, you can check the managed versions in the <a href="https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/3.3.13/spring-boot-dependencies-3.3.13.pom">Spring Boot Dependencies 3.3.13</a>.</p>
+<p>For support, please use the <a href="https://github.com/orgs/graceframework/discussions">Grace Discussions</a> or open an issue on <a href="https://github.com/graceframework/grace-geb/issues">Github Issues</a>.</p>
 </div>
 
 
                 <div style="clear:both;margin-top:15px;"></div>
                 
-                    <div class="toc-item prev-left"><a href="../guide/releases.html">&lt;&lt; <strong>2</strong><span>Release History</span></a></div>
-                
-                    <div class="toc-item next-right"><a href="../guide/usage.html"><strong>4</strong><span>Usage</span> >></a></div>
+                    <div class="toc-item prev-left"><a href="../guide/usage.html">&lt;&lt; <strong>4</strong><span>Usage</span></a></div>
                 
                 <div style="clear:both"></div>
             </div>

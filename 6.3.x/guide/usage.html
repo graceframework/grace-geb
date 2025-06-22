@@ -2,7 +2,7 @@
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <title>3 Usage 6.3.0-SNAPSHOT</title>
+    <title>4 Usage 6.3.0-SNAPSHOT</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
     <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
@@ -41,18 +41,24 @@ function addJsClass() {
                         <div class="toc-item" style="margin-left:0"><a href="../guide/introduction.html"><strong>1</strong><span>Introduction</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/installation.html"><strong>2</strong><span>Installation</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/releases.html"><strong>2</strong><span>Release History</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/usage.html"><strong>3</strong><span>Usage</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/installation.html"><strong>3</strong><span>Installation</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/usage.html"><strong>4</strong><span>Usage</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/support.html"><strong>5</strong><span>Support</span></a>
                         </div>
                         
                     </div>
                 </div>
             </li>
-            <!-- <li class="separator selected">
+            <li class="separator selected">
                 <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
-            </li> -->
+            </li>
             <li class="separator selected">
                 <a id="ref-button" href="../api/index.html">API Docs</a>
             </li>
@@ -68,16 +74,18 @@ function addJsClass() {
             <div id="main" class="corner-all">
 
                 
-                    <div class="toc-item prev-left"><a href="../guide/installation.html">&lt;&lt; <strong>2</strong><span>Installation</span></a></div>
+                    <div class="toc-item prev-left"><a href="../guide/installation.html">&lt;&lt; <strong>3</strong><span>Installation</span></a></div>
                 
 
                 <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
 
                 
+                    <div class="toc-item next-right"><a href="../guide/support.html"><strong>5</strong><span>Support</span> >></a></div>
+                
 
 
                 <div class="project">
-                    <h1>3 Usage</h1>
+                    <h1>4 Usage</h1>
 
                     <p><strong>Version:</strong> 6.3.0-SNAPSHOT</p>
                 </div>
@@ -86,7 +94,7 @@ function addJsClass() {
 
                 
 
-<h1 id="usage"><a class="anchor" href="#usage"></a>3 Usage</h1>
+<h1 id="usage"><a class="anchor" href="#usage"></a>4 Usage</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/graceframework/grace-geb/edit/6.3.x/docs/guide/usage.adoc"'>
@@ -95,17 +103,50 @@ function addJsClass() {
 </div>
 
 
-<div class="sect1">
-<h2 id="_usage">Usage</h2>
-<div class="sectionbody">
-
+<div class="paragraph">
+<p>Grace Geb plugin provides a Grace Script Command <a href="../ref/Commands/create-functional-test.html">create-functional-test</a> to create Geb functional test for your application.</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="console">$ grace create-functional-test Post
+| Created src/integration-test/groovy/com/example/PostSpec.groovy</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>.src/integration-test/groovy/com/example/PostSpec.groovy</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="annotation">@Integration</span>
+<span class="annotation">@Rollback</span>
+<span class="type">class</span> <span class="class">PostSpec</span> <span class="directive">extends</span> GebSpec {
+
+    <span class="keyword">def</span> <span class="function">setup</span>() {
+    }
+
+    <span class="keyword">def</span> <span class="function">cleanup</span>() {
+    }
+
+    <span class="type">void</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">test the homepage title</span><span class="delimiter">&quot;</span></span>() {
+        <span class="key">when</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">The homepage is visited</span><span class="delimiter">&quot;</span></span>
+            go <span class="string"><span class="delimiter">'</span><span class="content">/</span><span class="delimiter">'</span></span>
+
+        <span class="key">then</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">The title is correct</span><span class="delimiter">&quot;</span></span>
+                title == <span class="string"><span class="delimiter">&quot;</span><span class="content">Welcome to Grace</span><span class="delimiter">&quot;</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>you can check <a href="https://groovy.apache.org/geb/manual/7.0/">The Book Of Geb</a> to learn how to write the Geb functional tests.</p>
 </div>
 
 
                 <div style="clear:both;margin-top:15px;"></div>
                 
-                    <div class="toc-item prev-left"><a href="../guide/installation.html">&lt;&lt; <strong>2</strong><span>Installation</span></a></div>
+                    <div class="toc-item prev-left"><a href="../guide/installation.html">&lt;&lt; <strong>3</strong><span>Installation</span></a></div>
+                
+                    <div class="toc-item next-right"><a href="../guide/support.html"><strong>5</strong><span>Support</span> >></a></div>
                 
                 <div style="clear:both"></div>
             </div>

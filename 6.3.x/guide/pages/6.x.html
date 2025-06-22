@@ -1,180 +1,98 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-    <head>
-        <title>Grace Geb 6.3.0-SNAPSHOT</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8" />
-        <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8" />
+<head>
+    <title>2.1 What's new in 6.x 6.3.0-SNAPSHOT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
     <script type="text/javascript">
-function addJsClass(el) {
+function addJsClass() {
     var classes = document.body.className.split(" ");
     classes.push("js");
     document.body.className = classes.join(" ");
 }
     </script>
-    </head>
+</head>
 
-    <body class="body" onload="addJsClass();">
-        <div id="navigation">
-            <div class="navHeader">
-                
-                <span id="logo">
-                    <a href="https://graceframework.org" title="Go to Grace Framework Website">
-                        <img src="../img/grace.svg" alt="Grace Framework" />
-                    </a>
-                </span>
-                
-                <div class="docHeader">
-                    <h1 class="docTitle">Grace Geb</h1>
-                    <h3 class="docSubTitle">Provides Integration with Geb for Functional Testing</h3>
-                    <span class="docVersion">6.3.0-SNAPSHOT</span>
-                </div>
-            </div>
-            <div class="navLinks">
-                <ul>
-                    <li>
-                        <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
-                            <a href="../guide/index.html" class="button">Table of contents</a>
-                            <div id="nav-summary-childs" style="display:none;">
-                                
-                                <div class="toc-item" style="margin-left:0"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
-                                
-                                <div class="toc-item" style="margin-left:0"><a href="#releases"><strong>2</strong><span>Release History</span></a></div>
-                                
-                                <div class="toc-item" style="margin-left:0"><a href="#installation"><strong>3</strong><span>Installation</span></a></div>
-                                
-                                <div class="toc-item" style="margin-left:0"><a href="#usage"><strong>4</strong><span>Usage</span></a></div>
-                                
-                                <div class="toc-item" style="margin-left:0"><a href="#support"><strong>5</strong><span>Support</span></a></div>
-                                
-                            </div>
-                        </div>
-                    </li>
-                    <li class="separator selected">
-                        <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
-                    </li>
-                    <li class="separator selected">
-                        <a id="ref-button" href="../api/index.html">API Docs</a>
-                    </li>
-                </ul>
-
-            </div>
+<body class="body" onload="addJsClass();">
+<div id="navigation">
+    <div class="navHeader">
+        
+        <span id="logo">
+            <a href="https://graceframework.org" title="Grace Framework Website">
+                <img src="../img/grace.svg" alt="Grace Framework" />
+            </a>
+        </span>
+        
+        <div class="docHeader">
+            <h1 class="docTitle">Grace Geb</h1>
+            <h3 class="docSubTitle">Provides Integration with Geb for Functional Testing</h3>
         </div>
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../../guide/index.html" class="button">Table of contents</a>
 
-        <table id="colset" cellpadding="0" cellspacing="0">
-            <tr>
-                <td id="col1">
-                    <div id="main" class="corner-all">
-
-                        <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
-
-                        <div class="project">
-                            <h1>Grace Geb</h1>
-                            <p><strong>Authors:</strong> Michael Yan</p>
-                            <p><strong>Version:</strong> 6.3.0-SNAPSHOT</p>
-                            
-                        </div>
-
+                    <div id="nav-summary-childs" style="display:none;">
                         
-                        <div id="table-of-content">
-                            <h2>Table of Contents</h2>
-                            
-                            <div class="toc-item" style="margin-left:0px"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
-                            
-                            <div class="toc-item" style="margin-left:0px"><a href="#releases"><strong>2</strong><span>Release History</span></a></div>
-                            
-                            <div class="toc-item" style="margin-left:10px"><a href="#6.x"><strong>2.1</strong><span>What's new in 6.x</span></a></div>
-                            
-                            <div class="toc-item" style="margin-left:0px"><a href="#installation"><strong>3</strong><span>Installation</span></a></div>
-                            
-                            <div class="toc-item" style="margin-left:0px"><a href="#usage"><strong>4</strong><span>Usage</span></a></div>
-                            
-                            <div class="toc-item" style="margin-left:0px"><a href="#support"><strong>5</strong><span>Support</span></a></div>
-                            
-                            <div style="clear:both" ></div>
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/introduction.html"><strong>1</strong><span>Introduction</span></a>
                         </div>
                         
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/releases.html"><strong>2</strong><span>Release History</span></a>
+                        </div>
                         
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/installation.html"><strong>3</strong><span>Installation</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/usage.html"><strong>4</strong><span>Usage</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/support.html"><strong>5</strong><span>Support</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" href="../api/index.html">API Docs</a>
+            </li>
+        </ul>
+    </div>
 
-<h1 id="introduction"><a class="anchor" href="#introduction"></a>1 Introduction</h1>
 
-<div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/graceframework/grace-geb/edit/6.3.x/docs/guide/introduction.adoc"'>
-        <i class='fa fa-pencil-square-o'></i> Improve this doc
-    </button>
 </div>
 
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="corner-all">
 
-<div class="paragraph">
-<p>Geb Functional Testing for Grace application</p>
-</div>
-<div class="paragraph">
-<p>This plugin just provides the Geb dependencies and a <code>create-functional-test</code> command for generating Geb tests in a Grace app.</p>
-</div>
-<div class="paragraph">
-<p>For further reference please see the <a href="https://groovy.apache.org/geb/manual/current/">Geb documentation</a>.</p>
-</div>
+                
+                    <div class="toc-item prev-left"><a href="../../guide/introduction.html">&lt;&lt; <strong>1</strong><span>Introduction</span></a></div>
+                
 
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
 
-<h1 id="releases"><a class="anchor" href="#releases"></a>2 Release History</h1>
-
-<div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/graceframework/grace-geb/edit/6.3.x/docs/guide/releases.adoc"'>
-        <i class='fa fa-pencil-square-o'></i> Improve this doc
-    </button>
-</div>
+                
+                    <div class="toc-item next-right"><a href="../../guide/installation.html"><strong>3</strong><span>Installation</span> >></a></div>
+                
 
 
-<div class="sect1">
-<h2 id="releases">Release History</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To make it easier for users to use and upgrade, Plugin adopts a version policy consistent with the <a href="https://github.com/graceframework/grace-framework">Grace Framework</a>.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin Version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Grace Version</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6.3.x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023.3.x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6.2.x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023.2.x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6.1.x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023.1.x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6.0.x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023.0.x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5.2.x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022.2.x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5.1.x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022.1.x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5.0.x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022.0.x</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+                <div class="project">
+                    <h1>2.1 What's new in 6.x</h1>
 
+                    <p><strong>Version:</strong> 6.3.0-SNAPSHOT</p>
+                </div>
+
+                
+
+                
 
 <h2 id="6.x"><a class="anchor" href="#6.x"></a>2.1 What's new in 6.x</h2>
 
@@ -817,141 +735,44 @@ function addJsClass(el) {
 </div>
 
 
-<h1 id="installation"><a class="anchor" href="#installation"></a>3 Installation</h1>
-
-<div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/graceframework/grace-geb/edit/6.3.x/docs/guide/installation.adoc"'>
-        <i class='fa fa-pencil-square-o'></i> Improve this doc
-    </button>
-</div>
-
-
-<div class="paragraph">
-<p>To start using this plugin, there are only a couple simple steps:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Import the library in your <code>build.gradle</code></p>
-</li>
-</ol>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="groovy">dependencies {
-    testImplementation "org.graceframework.plugins:geb:6.3.0-SNAPSHOT"
-    testImplementation "org.seleniumhq.selenium:selenium-api"
-    testImplementation "org.seleniumhq.selenium:selenium-support"
-    testRuntimeOnly "org.seleniumhq.selenium:selenium-chrome-driver"
-    testRuntimeOnly "org.seleniumhq.selenium:selenium-firefox-driver"
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Before 6.3, Geb plugin use <a href="https://github.com/erdi/webdriver-binaries-gradle-plugin">WebDriver binaries Gradle plugin</a> to downloads and caches WebDriver binaries specific to the OS the build runs on, but this plugin dosen&#8217;t support Gradle 8.7+ due to <a href="https://github.com/erdi/webdriver-binaries-gradle-plugin/issues/43">this issue</a>, so Geb plugin doesn&#8217;t use it in 6.3 any more.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>Selenium Manager is a command-line tool implemented in Rust that provides automated driver and browser management for Selenium. Selenium bindings use this tool by default, so you do not need to download it or add anything to your code or do anything else to use it.</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>We recommend you use <a href="https://www.selenium.dev/documentation/selenium_manager/">Selenium Manager</a> instead of WebDriver binaries Gradle plugin. In 6.3, Selenium dependencies have already been upgraded to 4.19.1, you can check the managed versions in the <a href="https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/3.3.13/spring-boot-dependencies-3.3.13.pom">Spring Boot Dependencies 3.3.13</a>.</p>
-</div>
-
-
-<h1 id="usage"><a class="anchor" href="#usage"></a>4 Usage</h1>
-
-<div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/graceframework/grace-geb/edit/6.3.x/docs/guide/usage.adoc"'>
-        <i class='fa fa-pencil-square-o'></i> Improve this doc
-    </button>
-</div>
-
-
-<div class="paragraph">
-<p>Grace Geb plugin provides a Grace Script Command <a href="../ref/Commands/create-functional-test.html">create-functional-test</a> to create Geb functional test for your application.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="console">$ grace create-functional-test Post
-| Created src/integration-test/groovy/com/example/PostSpec.groovy</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><em>.src/integration-test/groovy/com/example/PostSpec.groovy</em></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="groovy"><span class="annotation">@Integration</span>
-<span class="annotation">@Rollback</span>
-<span class="type">class</span> <span class="class">PostSpec</span> <span class="directive">extends</span> GebSpec {
-
-    <span class="keyword">def</span> <span class="function">setup</span>() {
-    }
-
-    <span class="keyword">def</span> <span class="function">cleanup</span>() {
-    }
-
-    <span class="type">void</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">test the homepage title</span><span class="delimiter">&quot;</span></span>() {
-        <span class="key">when</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">The homepage is visited</span><span class="delimiter">&quot;</span></span>
-            go <span class="string"><span class="delimiter">'</span><span class="content">/</span><span class="delimiter">'</span></span>
-
-        <span class="key">then</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">The title is correct</span><span class="delimiter">&quot;</span></span>
-                title == <span class="string"><span class="delimiter">&quot;</span><span class="content">Welcome to Grace</span><span class="delimiter">&quot;</span></span>
-    }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>you can check <a href="https://groovy.apache.org/geb/manual/7.0/">The Book Of Geb</a> to learn how to write the Geb functional tests.</p>
-</div>
-
-
-<h1 id="support"><a class="anchor" href="#support"></a>5 Support</h1>
-
-<div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/graceframework/grace-geb/edit/6.3.x/docs/guide/support.adoc"'>
-        <i class='fa fa-pencil-square-o'></i> Improve this doc
-    </button>
-</div>
-
-
-<div class="paragraph">
-<p>For support, please use the <a href="https://github.com/orgs/graceframework/discussions">Grace Discussions</a> or open an issue on <a href="https://github.com/graceframework/grace-geb/issues">Github Issues</a>.</p>
-</div>
-
-                    </div>
-                </td>
-                <td id="col2">
+                <div style="clear:both;margin-top:15px;"></div>
+                
+                    <div class="toc-item prev-left"><a href="../../guide/introduction.html">&lt;&lt; <strong>1</strong><span>Introduction</span></a></div>
+                
+                    <div class="toc-item next-right"><a href="../../guide/installation.html"><strong>3</strong><span>Installation</span> >></a></div>
+                
+                <div style="clear:both"></div>
+            </div>
+        </td>
+        <td id="col2">
             <div class="local clearfix">
                 <div class="local-title">
-                    <a href="../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <a href="../../guide/index.html" target="mainFrame">Quick Reference</a>
                     <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
                 </div>
                 <div class="menu">
                     
                     <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Commands</h1><div class="menu-sub">
                         
-                        
-                        <div class="menu-item"><a href="../ref/Commands/create-functional-test.html">create-functional-test</a>
-                        </div>
-                        
-                        </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/create-functional-test.html">create-functional-test</a>
+                            </div>
+                            
+                            </div>
                     </div>
                     
                 </div>
             </div>
         </td>
-            </tr>
-        </table>
+    </tr>
+</table>
 
-        <div id="footer">
-            Copyright &copy; 2022-2025 Michael Yan and the original authors. The content is licensed under a Creative Commons Attribution 4.0 International (CC BY SA 4.0) license.
-            
-        </div>
+<div id="footer">
+    Copyright &copy; 2022-2025 Michael Yan and the original authors. The content is licensed under a Creative Commons Attribution 4.0 International (CC BY SA 4.0) license.
+    
+</div>
 
 <script type="text/javascript" src="../js/docs.js"></script>
 
-    </body>
+</body>
 </html>
